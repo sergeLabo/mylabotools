@@ -30,6 +30,7 @@ from functools import reduce
 def get_my_ip():
     '''Retourne l'adresse ip du pc sur le réseau local.
     Valable pour python 3.x
+    Non valable sur android
     '''
 
     #A generator that returns stripped lines of output from "ip address show"

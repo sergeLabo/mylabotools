@@ -4,15 +4,16 @@
 
 ### Installation
 
-#### Documentation
-* https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python
-
 Dans le dossier mylabotools, ouvrir un terminal:
   python3 setup.py install
 
 ou
 
  sudo pip3 install -e git+https://github.com/sergeLabo/mylabotools#egg=mylabotools
+
+#### Comment créer et installer son propre package
+* [Créer et installer son propre package python](https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python)
+
 
 ### Comprend
 

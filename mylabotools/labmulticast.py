@@ -26,7 +26,7 @@ import socket
 
 
 class Multicast():
-    """ Récupère des datas en Multicast, décode. Sans try:"""
+    """ Récupère des datas en Multicast. Sans try:"""
 
     def __init__(self, ip, port, buffer_size=1024):
         self.ANY = "0.0.0.0"
