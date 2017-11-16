@@ -86,3 +86,15 @@ git clone https://github.com/twisted/twisted.git
 cd twisted
 sudo python3 setup.py install
 ~~~
+
+### Utilisation
+
+~~~python
+import mylabotools
+
+ou
+
+from mylabotools import labtcpclient.py
+~~~
+
+### Merci à La Labomedia
