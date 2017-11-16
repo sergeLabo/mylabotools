@@ -1,15 +1,6 @@
 ## mylabotools
 
-#### Des scripts python génériques pour ne pas réinventer la poudre tous les 4 matins.
-
-### Installation
-
-Dans le dossier mylabotools, ouvrir un terminal:
-  python3 setup.py install
-
-ou
-
- sudo pip3 install -e git+https://github.com/sergeLabo/mylabotools#egg=mylabotools
+### Des scripts python génériques pour ne pas réinventer la poudre tous les 4 matins.
 
 #### Comment créer et installer son propre package
 * [Créer et installer son propre package python](https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python)
@@ -70,7 +61,7 @@ Ils peuvent être exécuté pour être tester, sauf les scripts du Blender Game 
 sudo apt-get install python3-dev python3-setuptools
 ~~~
 
-##### Install
+##### Installation
 
 Les sources de twisted comprennent les versions pour python2 et python3.
 
