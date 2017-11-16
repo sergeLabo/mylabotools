@@ -3,8 +3,12 @@
 ### Des scripts python génériques pour ne pas réinventer la poudre tous les 4 matins.
 
 #### Comment créer et installer son propre package
+
 * [Créer et installer son propre package python](https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python)
 
+Téléchrgaer les sources, dans le dossier:
+
+ sudo python3 setup.py install
 
 ### Comprend
 
