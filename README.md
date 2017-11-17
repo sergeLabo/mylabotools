@@ -87,6 +87,10 @@ cd twisted
 sudo python3 setup.py install
 ~~~
 
+##### Mise à jour
+
+ sudo pip3 install --upgrade mylabotools
+
 ### Utilisation
 
 ~~~python
@@ -94,7 +98,7 @@ import mylabotools
 
 ou
 
-from mylabotools import labtcpclient.py
+from mylabotools import labtcpclient
 ~~~
 
 ### Merci à La Labomedia
