@@ -55,7 +55,7 @@ Ils peuvent être exécuté pour être tester, sauf les scripts du Blender Game 
 
 ### TODO
 * labsqlite.py n'est pas abouti
-* labgetobject le nom est usurpé, il trouve les scénes !!
+
 
 
 #### Installation de twisted pour python 3
