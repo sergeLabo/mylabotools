@@ -4,13 +4,13 @@ from distutils.core import setup
 
 setup(  name='mylabotools',
         packages = ["mylabotools"],
-        version='1.31',
+        version='1.40',
         description='Python Labomedia Utilities',
         author='sergeLabo',
         url='https://labomedia.org',
         download_url='https://github.com/sergeLabo/mylabotools',
         license='GPL Version 2',
-        keywords = ["blender", "netwoek", "tools"],
+        keywords = ["blender", "network", "tools"],
         classifiers = [ "Programming Language :: Python",
                         "Programming Language :: Python :: 3",
                         "Development Status :: 4 - Beta",
@@ -23,7 +23,7 @@ setup(  name='mylabotools',
         long_description = """\
         Tools used every day
         --------------------
-        Tools for Blender Game Engine Python Script
+        Tools for Blender Game Engine and Python Script
         """,
 
         py_modules=['labfifolist',
@@ -43,5 +43,6 @@ setup(  name='mylabotools',
                     'labmulticasttwisted',
                     'labtcptwisted',
                     'labgetobject',
-                    'OSC3']
+                    'OSC3',
+                    'mytools']
      )
