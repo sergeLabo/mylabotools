@@ -4,11 +4,7 @@
 
 #### Comment créer et installer son propre package
 
-* [Créer et installer son propre package python](https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python)
-
-Téléchrgaer les sources, dans le dossier:
-
- sudo python3 setup.py install
+* [Créer et installer son propre package python](http://ressources.labomedia.org/python/creer_son_propre_package)
 
 ### Comprend
 
@@ -58,38 +54,10 @@ Ils peuvent être exécuté pour être tester, sauf les scripts du Blender Game 
 
 
 
-#### Installation de twisted pour python 3
-##### Dépendances
+### Installation
+#### Installation de Twisted pour python 3.x
+[Créer son propre package python](http://ressources.labomedia.org/python/creer_son_propre_package)
 
-~~~text
-sudo apt-get install python3-dev python3-setuptools
-~~~
-
-##### Installation
-
-Les sources de twisted comprennent les versions pour python2 et python3.
-
-Télécharger les sources à https://github.com/twisted/twisted
-
-Dans le dossier, ouvrir un terminal:
-
-~~~text
-sudo python3 setup.py install
-~~~
-
-ou
-
-Dans votre dossier projets, ouvrir un terminal:
-
-~~~text
-git clone https://github.com/twisted/twisted.git
-cd twisted
-sudo python3 setup.py install
-~~~
-
-##### Mise à jour
-
- sudo pip3 install --upgrade mylabotools
 
 ### Utilisation
 
@@ -100,5 +68,10 @@ ou
 
 from mylabotools import labtcpclient
 ~~~
+
+### Bugs
+
+* Il est possible que j'ai oublié des dépendances
+
 
 ### Merci à La Labomedia
