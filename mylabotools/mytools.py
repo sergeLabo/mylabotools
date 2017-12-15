@@ -51,6 +51,7 @@ class MyTools:
 
         with open(fichier, 'w') as fd:
             fd.write(data)
+        fd.close()
 
     def get_json_file(self, fichier):
         """Retourne le json décodé des datas lues
@@ -79,7 +80,6 @@ class MyTools:
                 total += 1
                 print("    ", f)
         print("Nombre de clés total =", total)
-        print("pour un théorique par jour de =", 24*1)
 
     def create_directory(self, directory):
         """Crée le répertoire avec le chemin absolu.
@@ -90,7 +90,7 @@ class MyTools:
             Path(directory).mkdir(mode=0o777, parents=False)
             print("Création du répertoire: {}".format(directory))
         except FileExistsError as e:
-            print("Le répertoire existe:", e)
+            print("Le répertoire", directory, "existe")
             pass
 
     def get_absolute_path(self, a_file_or_a_directory):

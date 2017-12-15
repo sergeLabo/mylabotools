@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(  name='mylabotools',
         packages = ["mylabotools"],
-        version='1.40',
+        version='1.41',
         description='Python Labomedia Utilities',
         author='sergeLabo',
         url='https://labomedia.org',
@@ -23,7 +23,7 @@ setup(  name='mylabotools',
         long_description = """\
         Tools used every day
         --------------------
-        Tools for Blender Game Engine and Python Script
+        Tools used in Blender Game Engine and Python Script
         """,
 
         py_modules=['labfifolist',
