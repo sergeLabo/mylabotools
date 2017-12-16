@@ -73,5 +73,8 @@ from mylabotools import labtcpclient
 
 * Il est possible que j'ai oublié des dépendances
 
+### Version
+
+* 1.42 try sur lecture de fichier
 
 ### Merci à La Labomedia

@@ -36,18 +36,24 @@ class MyTools:
         return all_files
 
     def read_file(self, file_name):
-        """Retourne les datas lues dans le fichier avec son chemin/nom.
+        """Retourne les datas lues dans le fichier avec son chemin/nom
+        Retourne None si fichier inexistant ou impossible à lire .
         """
 
-        # Open our local file
-        with open(file_name) as f:
-            read_data = f.read()
+        try:
+            with open(file_name) as f:
+                data = f.read()
+            f.close()
+        except:
+            data = None
+            print("Fichier inexistant ou impossible à lire:", file_name)
 
-        f.close()
-        return read_data
+        return data
 
     def write_data_in_file(self, data, fichier):
-        """Ecrit les data dans le fichier, écrase l'existant."""
+        """Ecrit les data dans le fichier, écrase l'existant.
+        Crée le fichier si besoin
+        """
 
         with open(fichier, 'w') as fd:
             fd.write(data)
@@ -56,14 +62,17 @@ class MyTools:
     def get_json_file(self, fichier):
         """Retourne le json décodé des datas lues
         dans le fichier avec son chemin/nom.
+        Retourne None si pas de fichier.
         """
 
-        # Open our local file
-        with open(fichier) as f:
-            data = f.read()
-        f.close()
-
-        data = loads(data)
+        try:
+            with open(fichier) as f:
+                data = f.read()
+                data = loads(data)
+            f.close()
+        except:
+            data = None
+            print("Fichier inexistant ou impossible à lire:", fichier)
 
         return data
 
