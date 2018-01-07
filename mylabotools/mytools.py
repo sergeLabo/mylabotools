@@ -95,6 +95,9 @@ class MyTools:
         self.write_file(data, fichier)
 
     def path_walker(self, path):
+        """Retourne la liste des fichiers dans le dossier
+        et les sous-dossiers.
+        """
 
         all_files = []
         for root, dirs, files in os.walk(path):
@@ -106,6 +109,8 @@ class MyTools:
         return all_files
 
     def scan_path(self, path):
+        """Pour test"""
+
         folders = []
         files = []
 
