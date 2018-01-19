@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(  name='mylabotools',
         packages = ["mylabotools"],
-        version='1.44',
+        version='1.45',
         description='Python Labomedia Utilities',
         author='sergeLabo',
         url='https://labomedia.org',
