@@ -52,11 +52,15 @@ Ils peuvent être exécuté pour être tester, sauf les scripts du Blender Game 
 ### TODO
 * labsqlite.py n'est pas abouti
 
-
-
 ### Installation
+
 #### Installation de Twisted pour python 3.x
-[Créer son propre package python](http://ressources.labomedia.org/python/creer_son_propre_package)
+
+* [Installation de Twisted pour python 3.x](https://wiki.labomedia.org/index.php/Installation_de_Twisted_pour_python_3.x)
+
+#### Installation de mylabotools
+
+* [Créer son propre package python](https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python)
 
 
 ### Utilisation
