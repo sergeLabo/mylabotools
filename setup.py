@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(  name='mylabotools',
         packages = ["mylabotools"],
-        version='1.45',
+        version='1.46',
         description='Python Labomedia Utilities',
         author='sergeLabo',
         url='https://labomedia.org',
@@ -18,8 +18,7 @@ setup(  name='mylabotools',
                         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
                         "Operating System :: Debian",
                         "Topic :: Blender Game Engine"
-                        "Topic :: Network",
-                        "Requires: re"],
+                        "Topic :: Network"],
         long_description = """\
         Tools used every day
         --------------------
