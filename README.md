@@ -56,11 +56,11 @@ Ils peuvent être exécuté pour être tester, sauf les scripts du Blender Game 
 
 #### Installation de Twisted pour python 3.x
 
-* [Installation de Twisted pour python 3.x](https://wiki.labomedia.org/index.php/Installation_de_Twisted_pour_python_3.x)
+* [Installation de Twisted pour python 3.x](https://ressources.labomedia.org/installation_de_twisted)
 
 #### Installation de mylabotools
 
-* [Créer son propre package python](https://wiki.labomedia.org/index.php/Cr%C3%A9er_son_propre_package_python)
+* [Créer son propre package python](https://ressources.labomedia.org/creer_son_propre_package_python)
 
 
 ### Utilisation
