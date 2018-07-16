@@ -2,9 +2,6 @@
 
 ### Des scripts python génériques pour ne pas réinventer la poudre tous les 4 matins.
 
-#### Comment créer et installer son propre package
-
-* [Créer et installer son propre package python](http://ressources.labomedia.org/python/creer_son_propre_package)
 
 ### Comprend
 
