@@ -1,28 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# mytools.py
-
-# #####################################################################
+#######################################################################
 # Copyright (C) La Labomedia November 2016
 #
 # This file is part of mylabotools.
-#
-# This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
+
+# Foobar is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# Foobar is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-#
+
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the
-# Free Software Foundation, Inc.,
-# 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-# #####################################################################
+# along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+#######################################################################
 
 
 import os
@@ -126,7 +122,6 @@ class MyTools:
         for root, dirs, files in os.walk(path):
             for file_ in files:
                 f = os.path.join(root, file_)
-                print(root, dirs, f)
                 all_files.append(f)
 
         return all_files
@@ -190,7 +185,8 @@ def test():
     print("\n\nTest de path_walker")
     path = "."
     all_files = mt.path_walker(path)
-    print(all_files)
+    print("all_files =", all_files)
+    print("Fin de test de path_walker\n\n")
 
     print("\n\nTest de scan_path")
     path = "./"
