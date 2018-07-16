@@ -18,8 +18,9 @@ Tools:
 * labfifolist.py La classe PileFIFO permet de faire des statistiques sur dernières valeurs
 * labgetmyip.py La fonction get_my_ip retourne l'adresse ip du pc sur le réseau local
 * labsqlite.py TODO non fini
-* labsometools.py some tools
+* blendertools.py some tools pour blender
 * labformatter.py Sortie en terminal bien présentée pour les list, tuple, dict
+* labtools des outils souvent utilisés
 
 Blender Game Engine:
 
@@ -76,6 +77,7 @@ from mylabotools import labtcpclient
 
 ### Version
 
+* 1.48 some tools propre
 * 1.47 correction path_walker, GPL V3
 * 1.46
 * 1.45 modif license

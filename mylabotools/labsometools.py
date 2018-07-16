@@ -6,36 +6,21 @@
 #
 # This file is part of mylabotools.
 
-# Foobar is free software: you can redistribute it and/or modify
+# mylabotools is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 
-# Foobar is distributed in the hope that it will be useful,
+# mylabotools is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
 # You should have received a copy of the GNU General Public License
-# along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+# along with mylabotools.  If not, see <https://www.gnu.org/licenses/>.
 #######################################################################
 
 import inspect
-import subprocess,re, socket
-from functools import reduce
-
-try:
-    from bge import logic as gl
-except:
-    pass
-
-class VirtualGl():
-    ''' Classe vide pour simuler
-    from bge import logic as gl
-    Dommage que ça ne serve pas à grand chose
-    '''
-
-    pass
 
 
 def scene_change(sceneOld, sceneNew):
@@ -66,25 +51,7 @@ def scene_change(sceneOld, sceneNew):
         except:
             print("  Scene {0} doesn't exist: Can't be set.".format(sceneNew))
 
-def get_my_ip():
-    '''
-        Get local ip
-        A generator that returns stripped lines of output from "ip address show"
-    '''
 
-    iplines=(line.strip() for line in \
-                        subprocess.getoutput("ip address show").split('\n'))
-
-    #Turn that into a list of IPv4 and IPv6 address/mask strings
-    addresses1=reduce(lambda a,v:a+v,(re.findall(r"inet ([\d.]+/\d+)",line) \
-            +re.findall(r"inet6 ([\:\da-f]+/\d+)",line) for line in iplines))
-
-    #Get a list of IPv4 addresses as (IPstring,subnetsize) tuples
-    ipv4s=[(ip,int(subnet)) for ip,subnet in (addr.split('/') for addr in \
-                                                addresses1 if '.' in addr)]
-
-    my_ip = ipv4s[1][0]
-    return my_ip
 
 def print_str_args(*args):
     ''' Imprime en terminal les variables en argument
@@ -100,12 +67,6 @@ def print_str_args(*args):
         val=eval(i,frame.f_globals,frame.f_locals)
         print('{0} = {1}'.format(i, val))
 
-def droiteAffine(x1, y1, x2, y2):
-    ''' Retourne les valeurs de a et b de y=ax+b
-        à partir des coordonnées de 2 points'''
-    a = (y2 - y1) / (x2 - x1)
-    b = y1 - (a * x1)
-    return a, b
 
 if __name__ == '__main__':
     # Only to test
