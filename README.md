@@ -2,6 +2,9 @@
 
 ### Des scripts python génériques pour ne pas réinventer la poudre tous les 4 matins.
 
+### Ce module n'est plus maintenu
+
+* Voir [pymultilame](https://github.com/sergeLabo/pymultilame)
 
 ### Comprend
 
